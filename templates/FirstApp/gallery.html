@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            background-color: lightyellow;
+        }
+        h1{
+            background-color: yellow;
+            color: blue;
+            text-align: center;
+            border: 2px solid Brown;
+        }
+        h4{
+            background-color: pink;
+            text-align: center;
+            color: red;
+            width:75%;
+            margin:auto;
+            border:1px solid red;
+        }
+        #div1{
+            border:5px solid red;
+            height: 500px;
+            padding: 3px;
+        }
+        #div2,#div3{
+            border: 2px solid green;
+            height: 45%;
+            padding: 10px;
+        }
+        .indiv{
+            border: 1px solid maroon;
+            float: left;
+            width: 24%;
+            height: 210px;
+            margin:1px;
+            padding: 5px;
+        }
+        img{
+            border:1px dotted blue;
+            width: 95%;
+            height: 200px;
+        }
+        img:hover{
+            border:4px solid blue;
+            width:400px;
+            height: 250px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="h1">{{ msg }}</h1>
+    <h4>Current Server date and time::{{ date1 }}</h4>
+    <hr/>
+    <div id="div1">
+        <div id="div2">
+            <div class="indiv"><img src="{% static 'images/gm.jpg' %}" alt="GM" /></div>
+            <div class="indiv"><img src="{% static 'images/ga.jpg' %}" alt="GA" /></div>
+            <div class="indiv"><img src="{% static 'images/ge.jpg' %}" alt="GE" /></div>
+            <div class="indiv"><img src="{% static 'images/gn.jpg' %}" alt="GN" /></div>
+        </div>
+        <div id="div3">
+            <div class="indiv"><img src="{% static 'images/gm.jpg' %}" alt="GM" /></div>
+            <div class="indiv"><img src="{% static 'images/ga.jpg' %}" alt="GA" /></div>
+            <div class="indiv"><img src="{% static 'images/ge.jpg' %}" alt="GE" /></div>
+            <div class="indiv"><img src="{% static 'images/gn.jpg' %}" alt="GN" /></div>
+        </div>
+
+    </div>
+</body>
+</html>
